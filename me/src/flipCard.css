@@ -1,0 +1,125 @@
+.flip-card-right {
+  background-color: transparent;
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  right: 15vw;
+  top: 15vh;
+  z-index: 999;
+}
+
+.flip-card-inner-right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-right:hover .flip-card-inner-right {
+  transform: rotateY(180deg) scale(2) translate(0%, 30%);
+}
+
+.flip-card-front-right,
+.flip-card-back-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-right {
+  background-color: lightpink;
+  border-left: 2px solid red;
+}
+
+.flip-card-back-right {
+  transform: rotateY(180deg);
+  border-top: 1px solid red;
+  background-color: white;
+  font-size: 10px !important;
+  position: absolute;
+  left: 35%;
+}
+
+/* LEFT CARD */
+
+.flip-card-left {
+  background-color: transparent;
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  left: 15vw;
+  top: 40vh;
+  z-index: 99;
+}
+
+.flip-card-inner-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  margin-bottom: 20px !important;
+}
+
+.flip-card-left:hover .flip-card-inner-left {
+  transform: rotateY(180deg) scale(2) translate(-40%, 0%);
+}
+
+.flip-card-front-left,
+.flip-card-back-left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-left {
+  border-left: 2px solid darkblue;
+  background-color: rgb(63, 169, 235);
+}
+
+.flip-card-back-left {
+  transform: rotateY(180deg);
+  border-top: 1px solid rgb(3, 109, 175);
+  background-color: white;
+  font-size: 10px !important;
+  padding: 10px !important;
+  position: absolute;
+  right: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .flip-card-left {
+    width: 60vw;
+    height: 60vw;
+    top: 60vh;
+    left: 10vw;
+  }
+
+  .flip-card-right {
+    width: 60vw;
+    height: 60vw;
+    right: 10vw;
+    top: 20vh;
+  }
+
+  .flip-card-right:hover .flip-card-inner-right {
+    transform: rotateY(180deg) translate(-20%, 0%);
+  }
+
+  .flip-card-left:hover .flip-card-inner-left {
+    transform: rotateY(180deg) translate(10%, -110%);
+  }
+
+  .kone-img {
+    height: 50%;
+  }
+
+  .sistema-img {
+    height: 60%;
+  }
+}

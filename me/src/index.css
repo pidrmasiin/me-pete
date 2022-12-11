@@ -1,0 +1,48 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.inline {
+  display: inline-block;  
+}
+.title {
+    margin-left: 3vw;
+    font-weight: 100;
+    font-size: medium;
+}
+
+.girl-img {
+    height: 70px;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    align-items: center;
+    vertical-align: auto;
+}
+
+.kone-img {
+    height: 30%;
+    align-self: center;
+}
+
+.sistema-img {
+    height: 35%;
+    align-self: center;
+}
+
+.center-container {
+    display:flex;
+    justify-content:center;
+}
+.rounded-border {
+    border-radius: 2px;
+}
