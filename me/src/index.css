@@ -1,48 +1,58 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
 }
 
 .inline {
-  display: inline-block;  
+  display: inline-block;
 }
 .title {
-    margin-left: 3vw;
-    font-weight: 100;
-    font-size: medium;
+  margin-left: 3vw;
+  font-weight: 100;
+  font-size: medium;
 }
 
 .girl-img {
-    height: 70px;
-    margin-left: 2vw;
-    margin-top: 2vw;
-    align-items: center;
-    vertical-align: auto;
+  height: 70px;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  align-items: center;
+  vertical-align: auto;
 }
 
 .kone-img {
-    height: 30%;
-    align-self: center;
+  height: 30%;
+  align-self: center;
 }
 
 .sistema-img {
-    height: 35%;
-    align-self: center;
+  height: 35%;
+  align-self: center;
 }
 
 .center-container {
-    display:flex;
-    justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 .rounded-border {
-    border-radius: 2px;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  span {
+    font-size: 12px;
+  }
+
+  .girl-img {
+    height: 60px;
+  }
 }

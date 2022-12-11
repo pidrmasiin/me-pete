@@ -42,8 +42,8 @@ function App() {
             <div className="flip-card-back-right">
               <h1>Sistema</h1>
               <p>
-                Where journalists have started to use modern technologies to
-                support the story telling, the mainstream of e-literature
+                While journalists have started to use modern technologies to
+                support the story telling, the mainstream of e-literature still
                 doesn't really differ from the traditional forms of the written
                 art.
               </p>

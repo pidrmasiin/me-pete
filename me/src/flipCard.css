@@ -94,25 +94,25 @@
 
 @media only screen and (max-width: 600px) {
   .flip-card-left {
-    width: 60vw;
-    height: 60vw;
+    width: 50vw;
+    height: 50vw;
     top: 60vh;
-    left: 10vw;
+    left: 25vw;
   }
 
   .flip-card-right {
-    width: 60vw;
-    height: 60vw;
-    right: 10vw;
-    top: 20vh;
+    width: 50vw;
+    height: 50vw;
+    left: 25vw;
+    top: 22vh;
   }
 
   .flip-card-right:hover .flip-card-inner-right {
-    transform: rotateY(180deg) translate(-20%, 0%);
+    transform: rotateY(180deg) translate(-30%, -20%);
   }
 
   .flip-card-left:hover .flip-card-inner-left {
-    transform: rotateY(180deg) translate(10%, -110%);
+    transform: rotateY(180deg) translate(10%, -160%);
   }
 
   .kone-img {
