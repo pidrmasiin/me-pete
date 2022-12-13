@@ -89,7 +89,14 @@
   font-size: 10px !important;
   padding: 10px !important;
   position: absolute;
+  max-height: 40vh !important;
   right: 15%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .flip-card-left:hover .flip-card-inner-left {
+    transform: rotateY(180deg) scale(1.8) translate(-25%, -60%);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -107,12 +114,20 @@
     top: 22vh;
   }
 
+  .flip-card-back-left {
+    width: 70vw;
+  }
+
+  .flip-card-back-right {
+    width: 70vw;
+  }
+
   .flip-card-right:hover .flip-card-inner-right {
-    transform: rotateY(180deg) translate(-30%, -20%);
+    transform: rotateY(180deg) translate(-55%, -20%);
   }
 
   .flip-card-left:hover .flip-card-inner-left {
-    transform: rotateY(180deg) translate(10%, -160%);
+    transform: rotateY(180deg) translate(35%, -120%);
   }
 
   .kone-img {
@@ -121,5 +136,11 @@
 
   .sistema-img {
     height: 60%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .flip-card-left:hover .flip-card-inner-left {
+    transform: rotateY(180deg) translate(35%, -190%);
   }
 }
